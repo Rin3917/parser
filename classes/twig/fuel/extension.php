@@ -44,7 +44,7 @@ class Twig_Fuel_Extension extends \Twig_Fuel_Extension_Wrapper
 	public function getFunctions()
 	{
 		// Check twig version 
-		$version =  (float) substr(class_exists('\Twig\Environment') ? \Twig\Environment::VERSION : Twig_Environment::VERSION, 0, 3);
+		$version =  (float) substr(class_exists('\Twig\Environment') ? \Twig\Environment::VERSION : \Twig_Environment::VERSION, 0, 3);
 		
 		if($version >= 3)
 		{
